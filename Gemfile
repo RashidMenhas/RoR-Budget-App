@@ -10,9 +10,9 @@ gem 'rails', '~> 7.0.4', '>= 7.0.4.3'
 gem 'sprockets-rails'
 
 # Use postgresql as the database for Active Record
+gem 'cancancan'
 gem 'devise'
 gem 'pg', '~> 1.1'
-gem 'cancancan'
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem 'puma', '~> 5.0'
@@ -58,9 +58,9 @@ end
 
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
-  gem 'web-console'
   gem 'letter_opener'
-  
+  gem 'web-console'
+
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"
 

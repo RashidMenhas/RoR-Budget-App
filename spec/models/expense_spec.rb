@@ -3,11 +3,10 @@ require 'rails_helper'
 RSpec.describe Expense, type: :model do
   before :each do
     @user = User.create(name: 'RashidMenhas')
-    @transaction = @user.expenses.build(author: @user,name: 'Bat', amount: 100)
+    @transaction = @user.expenses.build(author: @user, name: 'Bat', amount: 100)
   end
 
   context 'This Testing validations' do
-
     it 'is valide with all valid attributes' do
       expect(@transaction).to be_valid
     end
