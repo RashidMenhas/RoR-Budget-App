@@ -1,15 +1,14 @@
-# frozen_string_literal: true
-
 class Ability
   include CanCan::Ability
 
-  def initialize(user)    
-      return unless current_user.present?
-      can(:manage, Group, user)
-      can(:manage, Expense, user)
-      can :manage, GroupExpense do |category_transaction|
-        category_transaction.group.user == user
-      end
+  def initialize(user)
+    return unless current_user.present?
+
+    can(:manage, Group, user)
+    can(:manage, Expense, user)
+    can :manage, GroupExpense do |category_transaction|
+      category_transaction.group.user == user
+    end
     # The first argument to `can` is the action you are giving the user
     # permission to do.
     # If you pass :manage it will apply to every action. Other common actions

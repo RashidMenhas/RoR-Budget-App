@@ -1,20 +1,20 @@
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  a {
-    text-decoration: none;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  .container {
-    width: 40vw;
-    height: auto;
-  }
+a {
+  text-decoration: none;
+}
 
-  .child{
-    border: 3px solid rgb(204, 204, 204);
-    padding: 3rem;
-    border-radius: 5px;
-  }
+.container {
+  width: 40vw;
+  height: auto;
+}
+
+.child {
+  border: 3px solid rgb(204, 204, 204);
+  padding: 3rem;
+  border-radius: 5px;
+}
